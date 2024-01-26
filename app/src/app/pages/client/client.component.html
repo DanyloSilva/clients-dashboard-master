@@ -1,0 +1,12 @@
+<table *ngIf="clients.length > 0">
+    <tr>
+        <th>#</th>
+        <th>Name</th>
+        <th>Image</th>
+    </tr>
+    <tr *ngFor="let client of clients">
+        <td>{{client._id}}</td>
+        <td>{{client.name}}</td>
+        <td><img width="100" height="100" [src]="client.image_src" alt=""></td>
+    </tr>
+</table>
